@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apresentacao - Tags HTML</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+    <header class="topo">
+        <h1>Apresentacao de Tags HTML</h1>
+        <p>Equipe 1 - Aula introdutoria com explicacao do esqueleto HTML, pratica de codigo e uso do DevTools</p>
+    </header>
+
+    <main>
+
+        <section class="slide">
+            <h2>1. Como a aula vai funcionar</h2>
+            <p>
+                Nossa proposta e apresentar HTML em formato de aula: primeiro entender a base da pagina,
+                depois abrir o codigo, editar trechos simples e finalmente usar o DevTools do navegador
+                para inspecionar e testar mudancas em tempo real.
+            </p>
+
+            <div class="grade grade-3">
+                <article class="mini-card">
+                    <h3>Parte 1</h3>
+                    <p>Entender o esqueleto de um arquivo HTML.</p>
+                </article>
+                <article class="mini-card">
+                    <h3>Parte 2</h3>
+                    <p>Manipular titulos, textos, links, listas e imagens.</p>
+                </article>
+                <article class="mini-card">
+                    <h3>Parte 3</h3>
+                    <p>Inspecionar elementos e testar mudancas no DevTools.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="slide">
+            <h2>2. O esqueleto basico do HTML</h2>
+            <p>
+                Todo documento HTML comeca com uma estrutura minima. Ela informa ao navegador
+                que tipo de documento esta sendo lido e onde fica o conteudo visivel da pagina.
+            </p>
+
+            <div class="esqueleto">
+                <div><code>&lt;!DOCTYPE html&gt;</code> define que o documento usa HTML5.</div>
+                <div><code>&lt;html&gt;</code> envolve toda a pagina.</div>
+                <div><code>&lt;head&gt;</code> guarda configuracoes e metadados.</div>
+                <div><code>&lt;body&gt;</code> contem tudo o que aparece para o usuario.</div>
+            </div>
+
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Minha primeira pagina&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Ola, mundo!&lt;/h1&gt;
+    &lt;p&gt;Esse e meu primeiro conteudo em HTML.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <section class="slide">
+            <h2>3. O que existe dentro de head e body</h2>
+            <p>
+                Uma duvida comum de quem esta comecando e separar o que fica no <code>&lt;head&gt;</code>
+                do que fica no <code>&lt;body&gt;</code>. O head prepara a pagina. O body entrega o conteudo.
+            </p>
+
+            <div class="grade grade-2">
+                <article class="mini-card">
+                    <h3>Head</h3>
+                    <ul>
+                        <li><code>&lt;meta charset&gt;</code> define a codificacao de caracteres.</li>
+                        <li><code>&lt;meta name="viewport"&gt;</code> melhora a exibicao em celular.</li>
+                        <li><code>&lt;title&gt;</code> muda o nome exibido na aba do navegador.</li>
+                        <li><code>&lt;link&gt;</code> conecta um arquivo CSS externo.</li>
+                    </ul>
+                </article>
+
+                <article class="mini-card">
+                    <h3>Body</h3>
+                    <ul>
+                        <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> criam titulos.</li>
+                        <li><code>&lt;p&gt;</code> cria paragrafos.</li>
+                        <li><code>&lt;a&gt;</code> cria links.</li>
+                        <li><code>&lt;img&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;div&gt;</code> e outras tags montam a pagina.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="slide">
+            <h2>4. Primeira pratica: alterando o conteudo</h2>
+            <p>
+                Depois de entender a estrutura, o proximo passo e editar o codigo. Com poucas tags ja conseguimos
+                montar uma pagina simples e perceber o efeito de cada mudanca no navegador.
+            </p>
+
+            <div class="exemplo">
+                <h3>Exemplo pronto</h3>
+                <h1 class="demo-title">Minha pagina de estudos</h1>
+                <p>Estou aprendendo a criar conteudo com HTML.</p>
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">Abrir documentacao MDN</a>
+            </div>
+
+            <pre><code>&lt;h1&gt;Minha pagina de estudos&lt;/h1&gt;
+&lt;p&gt;Estou aprendendo a criar conteudo com HTML.&lt;/p&gt;
+&lt;a href="https://developer.mozilla.org/pt-BR/"&gt;Abrir documentacao MDN&lt;/a&gt;</code></pre>
+        </section>
+
+        <section class="slide">
+            <h2>5. Tags basicas para praticar</h2>
+            <p>
+                Essas sao algumas das tags mais simples para demonstrar ao vivo em sala.
+                Elas ajudam a mostrar como o HTML estrutura a informacao antes mesmo de pensar em design.
+            </p>
+
+            <div class="grade grade-2">
+                <article class="mini-card">
+                    <h3>Texto e organizacao</h3>
+                    <ul>
+                        <li><code>&lt;h1&gt;</code> a <code>&lt;h3&gt;</code> para hierarquia de titulos.</li>
+                        <li><code>&lt;p&gt;</code> para paragrafos.</li>
+                        <li><code>&lt;br&gt;</code> para quebra de linha.</li>
+                        <li><code>&lt;hr&gt;</code> para separar assuntos.</li>
+                    </ul>
+                </article>
+
+                <article class="mini-card">
+                    <h3>Conteudo e navegacao</h3>
+                    <ul>
+                        <li><code>&lt;a&gt;</code> para links.</li>
+                        <li><code>&lt;img&gt;</code> para imagens.</li>
+                        <li><code>&lt;ul&gt;</code> e <code>&lt;ol&gt;</code> para listas.</li>
+                        <li><code>&lt;div&gt;</code> para agrupar blocos.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <pre><code>&lt;h2&gt;Lista de materiais&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li&gt;Notebook&lt;/li&gt;
+    &lt;li&gt;Navegador&lt;/li&gt;
+    &lt;li&gt;Editor de codigo&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </section>
+
+        <section class="slide">
+            <h2>6. Exemplo de manipulacao de codigo</h2>
+            <p>
+                Nessa parte da aula, a ideia e alterar pequenos trechos e observar o resultado imediatamente.
+                Isso ajuda quem esta comecando a associar cada tag ao comportamento visual da pagina.
+            </p>
+
+            <div class="passos">
+                <div class="passo"><strong>Passo 1:</strong> trocar o texto do titulo.</div>
+                <div class="passo"><strong>Passo 2:</strong> adicionar um novo item na lista.</div>
+                <div class="passo"><strong>Passo 3:</strong> mudar o endereco de um link.</div>
+                <div class="passo"><strong>Passo 4:</strong> alterar o atributo <code>alt</code> de uma imagem.</div>
+            </div>
+
+            <pre><code>&lt;img
+    src="https://via.placeholder.com/600x240/2563eb/ffffff?text=HTML"
+    alt="Imagem ilustrando estudos de HTML"
+&gt;</code></pre>
+        </section>
+
+        <section class="slide">
+            <h2>7. Usando o DevTools do navegador</h2>
+            <p>
+                O DevTools permite inspecionar a pagina, localizar elementos e testar alteracoes sem precisar
+                salvar o arquivo toda vez. E uma ferramenta importante para aprender e para depurar erros.
+            </p>
+
+            <div class="grade grade-3">
+                <article class="mini-card">
+                    <h3>Inspecionar</h3>
+                    <p>Clique com o botao direito em um elemento e escolha <strong>Inspecionar</strong>.</p>
+                </article>
+                <article class="mini-card">
+                    <h3>Editar HTML</h3>
+                    <p>No painel Elements, e possivel mudar textos, classes e atributos.</p>
+                </article>
+                <article class="mini-card">
+                    <h3>Testar CSS</h3>
+                    <p>No painel Styles, podemos ligar e desligar regras para entender o efeito visual.</p>
+                </article>
+            </div>
+
+            <pre><code>Exemplos de uso em aula:
+- alterar o texto de um &lt;h1&gt;
+- remover uma tag temporariamente
+- testar uma cor no CSS
+- verificar se uma imagem possui atributo alt</code></pre>
+        </section>
+
+        <section class="slide">
+            <h2>8. Roteiro sugerido para demonstracao</h2>
+            <p>
+                Para manter a aula dinamica, podemos seguir uma sequencia curta que mistura explicacao e pratica.
+                Assim o publico acompanha a teoria enquanto observa o codigo sendo manipulado.
+            </p>
+
+            <ol class="roteiro">
+                <li>Mostrar a estrutura minima de um arquivo HTML.</li>
+                <li>Explicar o papel de <code>head</code> e <code>body</code>.</li>
+                <li>Criar um titulo e um paragrafo ao vivo.</li>
+                <li>Adicionar um link e uma lista.</li>
+                <li>Abrir o DevTools e editar o HTML pela aba Elements.</li>
+                <li>Testar mudancas de estilo na aba Styles.</li>
+            </ol>
+        </section>
+
+        <section class="slide">
+            <h2>9. Conclusao</h2>
+            <p>
+                A base do HTML esta em entender a estrutura do documento e praticar pequenas alteracoes de codigo.
+                Quando combinamos isso com o DevTools, o aprendizado fica mais visual, rapido e facil de demonstrar.
+            </p>
+
+            <div class="mini-card">
+                <p><strong>Resumo da equipe 1:</strong> apresentar o esqueleto do HTML, ensinar tags basicas, manipular exemplos ao vivo e usar o DevTools para reforcar a pratica.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="final">
+        <p>Trabalho de HTML - Equipe 1</p>
+    </footer>
+
+</body>
+</html>
